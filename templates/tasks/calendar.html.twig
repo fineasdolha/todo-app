@@ -1,0 +1,94 @@
+{% extends './user_main/index.html.twig' %}
+
+{% block title %}{{ 'Calendar'|trans }}{% endblock %}
+
+{% block additionalHeader %}
+<li class="nav-item">
+                    <a class="nav-link text-white" href="{{  path('app_user_main') }}">{{ 'Return to homepage'|trans }}</a>
+</li>
+{% endblock %}
+
+{% block content %}
+
+    <script>
+    fetch('https://127.0.0.1:8000/fr/api')
+        .then((response) => response.json())
+        .then((json) => {
+            
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: json,
+                eventLimit: true,
+                eventClick: function(info) { 
+                    console.log(info.event);
+                    $('#event-title').text(info.event.title);
+                    $('#event-start').text(info.event.start);
+                    $('#event-description').text(info.event.extendedProps.description);
+                    $('#event-category').text(info.event.extendedProps.category);
+                    x=info.event.id;
+                    $('#task-delete').attr("href", $('#task-delete').attr("href").replace("contentToDelete",x));
+                    $('#task-modify').attr("href", $('#task-modify').attr("href").replace("contentToModify",x));
+                    if(info.event.extendedProps.status == "done"){
+                     $('#task-not-done').attr("href", $('#task-not-done').attr("href").replace("not_completed",x));
+                     $('#task-done').html()="";   
+                    }
+                    $('#event-details-modal').modal('show');
+                   // console.log(info.event.id);
+                },
+                themeSystem : 'bootstrap5',
+                headerToolbar : {
+                        left:'title',
+                        center :'prev,next today',
+                        right : 'dayGridMonth,timeGridWeek,timeGridDay'
+            } 
+            });
+        calendar.render();
+      });
+       
+      
+      
+        
+   
+    </script>
+
+<section id="layoutSidenav_content">
+<div class="container p-4 m-4" style="background-color:white;">
+<h1 class="text-center">{{ 'Calendar'|trans}}</h1>
+<div class="d-flex justify-content-evenly">
+<a class="text-decoration-none" href="{{ path('app_addtask') }}"><span class="action-link">{{'Add more tasks '|trans}}<i class="fa-solid fa-plus"></i></span></a>
+<a class="text-decoration-none" href="{{ path('app_addcategory') }}"><span class="action-link">{{'Add a new category '|trans}}<i class="fa-solid fa-plus"></i></span></a>
+</div>
+<div id='calendar'></div>
+
+</div>
+<div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header rounded-0">
+                    <h2 class="modal-title">{{ 'Task details'|trans}}</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body rounded-0">
+                    <div class="container-fluid">
+                     <h3 id="event-title"></h3>
+                     <p id="event-description"></p>
+                     <p>{{ 'Task details'|trans}}<span id="event-number"></span> </p>   
+                     <p>{{ 'Category : '|trans}}<span id="event-category"></span></p>
+                     <p>{{ 'Due date'|trans}}<span id="event-start"></span></p> 
+                    </div>
+                </div>
+                <div class="modal-footer rounded-0">
+                    <div id="modal-end" class="text-end justify-content-evenly">
+                        <a class="text-decoration-none"  id="task-done" href="{{ path('app_status_done', {slug: "completed"}) }}"><i class="fa-solid fa-check" style="color: #0f9f2c;"></i></a>
+                        <a class="text-decoration-none "  id="task-not-done" href="{{ path('app_status_not_done', {slug: "not_completed"}) }}"><i class="fa-solid fa-rotate-left"></i></a>
+                        <a class="text-decoration-none" id="task-delete" href="{{ path('app_delete', {slug: "contentToDelete"}) }}"><i class="fa-solid fa-trash" style="color: #aa0000;"></i></a>
+                        <a class="text-decoration-none" id="task-modify" href="{{ path('app_modify', {slug: "contentToModify"}) }}"><i class="fa-solid fa-pen"></i></a>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+{# {{ path('app_delete', {slug: task.id}) }} #}
+{% endblock %}

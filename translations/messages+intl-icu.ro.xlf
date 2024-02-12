@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ro" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>__Home</target>
+      </trans-unit>
+      <trans-unit id="s6YOYaU" resname="Tasks">
+        <source>Tasks</source>
+        <target>__Tasks</target>
+      </trans-unit>
+      <trans-unit id="y2ZII4P" resname="All tasks">
+        <source>All tasks</source>
+        <target>__All tasks</target>
+      </trans-unit>
+      <trans-unit id="u608nG2" resname="Add a task">
+        <source>Add a task</source>
+        <target>__Add a task</target>
+      </trans-unit>
+      <trans-unit id="tTGBpNh" resname="My account">
+        <source>My account</source>
+        <target>__My account</target>
+      </trans-unit>
+      <trans-unit id="SWFhRVF" resname="Log out">
+        <source>Log out</source>
+        <target>__Log out</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>__Register</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>__Log in</target>
+      </trans-unit>
+      <trans-unit id="pP5lJk7" resname="Language">
+        <source>Language</source>
+        <target>__Language</target>
+      </trans-unit>
+      <trans-unit id="dFgZn_l" resname="French">
+        <source>French</source>
+        <target>__French</target>
+      </trans-unit>
+      <trans-unit id="uhGL9.y" resname="English">
+        <source>English</source>
+        <target>__English</target>
+      </trans-unit>
+      <trans-unit id="DiImtSN" resname="Welcome">
+        <source>Welcome</source>
+        <target>__Welcome</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>__Password</target>
+      </trans-unit>
+      <trans-unit id="1NfyOG4" resname="Return to homepage">
+        <source>Return to homepage</source>
+        <target>__Return to homepage</target>
+      </trans-unit>
+      <trans-unit id="WfpDeb4" resname="Reset your password">
+        <source>Reset your password</source>
+        <target>__Reset your password</target>
+      </trans-unit>
+      <trans-unit id="HRTgmEN" resname="Your To Do List">
+        <source>Your To Do List</source>
+        <target>__Your To Do List</target>
+      </trans-unit>
+      <trans-unit id="47DEQpj" resname="">
+        <source></source>
+        <target>__</target>
+      </trans-unit>
+      <trans-unit id="El5vaif" resname="Add new task">
+        <source>Add new task</source>
+        <target>__Add new task</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>__Sign in</target>
+      </trans-unit>
+      <trans-unit id="vSTb9IR" resname="Hi! Please confirm your email!">
+        <source>Hi! Please confirm your email!</source>
+        <target>__Hi! Please confirm your email!</target>
+      </trans-unit>
+      <trans-unit id="nZPB._o" resname="Please confirm your email address by clicking the following link">
+        <source>Please confirm your email address by clicking the following link</source>
+        <target>__Please confirm your email address by clicking the following link</target>
+      </trans-unit>
+      <trans-unit id="ITaQX9q" resname="Confirm my Email">
+        <source>Confirm my Email</source>
+        <target>__Confirm my Email</target>
+      </trans-unit>
+      <trans-unit id="F7WctIl" resname="Cheers!">
+        <source>Cheers!</source>
+        <target>__Cheers!</target>
+      </trans-unit>
+      <trans-unit id="NjnvzQi" resname="Hi">
+        <source>Hi</source>
+        <target>__Hi</target>
+      </trans-unit>
+      <trans-unit id="vQH5j0c" resname="To reset your password, please visit the following link">
+        <source>To reset your password, please visit the following link</source>
+        <target>__To reset your password, please visit the following link</target>
+      </trans-unit>
+      <trans-unit id="87wG9uu" resname="This link will expire in">
+        <source>This link will expire in</source>
+        <target>__This link will expire in</target>
+      </trans-unit>
+      <trans-unit id="p49E9Md" resname="Cheers">
+        <source>Cheers</source>
+        <target>__Cheers</target>
+      </trans-unit>
+      <trans-unit id="UZulcve" resname="Enter your email address, and we will send you a link to reset your password.">
+        <source>Enter your email address, and we will send you a link to reset your password.</source>
+        <target>__Enter your email address, and we will send you a link to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="2u52BrM" resname="Reset">
+        <source>Reset</source>
+        <target>__Reset</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>__Name</target>
+      </trans-unit>
+      <trans-unit id="Um4Ah8w" resname="Description">
+        <source>Description</source>
+        <target>__Description</target>
+      </trans-unit>
+      <trans-unit id="1g27oHk" resname="Priority">
+        <source>Priority</source>
+        <target>__Priority</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>__Category</target>
+      </trans-unit>
+      <trans-unit id="4cttMPo" resname="Due date">
+        <source>Due date</source>
+        <target>__Due date</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>__Delete</target>
+      </trans-unit>
+      <trans-unit id="2U6vaUO" resname="Modify">
+        <source>Modify</source>
+        <target>__Modify</target>
+      </trans-unit>
+      <trans-unit id="Lg6WCrM" resname="Form">
+        <source>Form</source>
+        <target>__Form</target>
+      </trans-unit>
+      <trans-unit id="GPr8.HH" resname="Add a new task form">
+        <source>Add a new task form</source>
+        <target>__Add a new task form</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

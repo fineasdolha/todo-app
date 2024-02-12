@@ -1,0 +1,67 @@
+{% extends './user_main/index.html.twig' %}
+
+{% block title %}Tasks List{% endblock %}
+
+
+
+{% block additionalHeader %}
+<li class="nav-item">
+    <a class="nav-link text-white" href="{{  path('app_user_main') }}">{{ 'Return to homepage'|trans }}</a>
+</li>
+{% endblock %}
+{% block content %}
+
+  <script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>  
+
+
+
+<section id="layoutSidenav_content">
+{# <a class="text-decoration-none btn btn-success my-2" href="{{  path('app_addtask') }}">Add new task</a>
+<a class="text-decoration-none btn btn-secondary my-2" href="{{  path('app_main') }}">Return to home</a>
+<a class="text-decoration-none btn btn-secondary my-2" href="{{  path('app_logout') }}">Log out</a> #}
+    <div class="container p-4 m-4">
+        <h1 class="text-center">{{ 'Task manager'|trans}}</h1>
+        <table class="table table-striped" id="myTable">
+    <thead>
+        <tr>
+            <th>{{ 'Name'|trans }}</th>
+            <th>{{ 'Description'|trans }}</th>
+            <th>{{ 'Priority'|trans }}</th>
+            <th>{{ 'Category'|trans }}</th>
+            <th>{{ 'Due date'|trans }}</th>
+            <th>{{ 'Status'|trans }}</th>
+            <th>{{ 'Delete'|trans }}</th>
+            <th>{{ 'Modify'|trans }}</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+
+        <tr>
+            <td>{{ task.name }}</td>
+            <td>{{ task.description }}</td>
+            <td>{{ task.priority }}</td>
+            <td>{{ task.category.name }}</td>
+            <td> {{ task.duedate|date('Y-m-d') }} </td>
+            {% if task.status == "done"  %}
+            <td>{{ task.status }}<a class="text-decoration-none " href="{{ path('app_status_not_done', {slug: task.id}) }}">{{' Not done yet? '|trans}}<i class="fa-solid fa-rotate-left"></i> </td>
+            {% else %}
+            <td>{{ task.status }}<a class="text-decoration-none" href="{{ path('app_status_done', {slug: task.id}) }}">{{' Completed task? '|trans}} <i class="fa-solid fa-check" style="color: #0f9f2c;"></i></a> </td>
+            {% endif %}
+            <td><button class ="btn btn-danger btn-sm"><a class="text-white text-decoration-none" href="{{ path('app_delete', {slug: task.id}) }}">{{ 'Delete'|trans }}</a></button></td>
+            <td><button class ="btn btn-primary btn-sm" ><a class="text-white text-decoration-none" href="{{ path('app_modify', {slug: task.id}) }}">{{ 'Modify'|trans }}</button></a></td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+        </table>
+    </div>
+</section>
+
+
+{% endblock %}

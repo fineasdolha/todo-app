@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'Register'|trans }}{% endblock %}
+
+{% block body %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('styles/stylesheet_forms.css') }}">                   
+{% endblock %}
+
+    {% for flash_error in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+    {% endfor %}
+<section class="container">
+    
+    <h1 class="text-center m-2">{{ 'Register'|trans }}</h1>
+    
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+        <div class="row">
+            <div class="col">
+                {{ form_row(registrationForm.username) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                {{ form_row(registrationForm.firstName) }}
+            </div>
+            
+            <div class="col-6">
+                {{ form_row(registrationForm.lastName) }}
+            <div>
+            
+            </div>
+        
+            </div>
+           
+            <div class="col-12">
+                {{ form_row(registrationForm.photoFileName) }}
+            </div>
+      
+            <div class="col-6">    
+                {{ form_row(registrationForm.plainPassword.first) }}
+            </div>
+            <div class="col-6">    
+                {{ form_row(registrationForm.plainPassword.second) }}
+            </div>
+       
+            <button type="submit" class="col-2 btn btn-lg mx-auto kaki-dark">{{ 'Register'|trans }}</button>
+            
+            {{ form_end(registrationForm) }}
+
+    </section>
+{% endblock %}

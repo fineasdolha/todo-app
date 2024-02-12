@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ 'Home'|trans }}{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('styles/stylesheet_main.css') }}">                   
+{% endblock %}
+{% block body %}
+<div class="masthead">
+    <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+        {% if app.user %}
+        <h1 class="text-uppercase">{{ 'Don`t waste time, '|trans }}{{ app.user.firstName }} </h1>
+        <a class="text-white text-decoration-none btn btn-lg kaki-light rounded-0 shadow mt-2 text-uppercase" href="{{  path('app_user_main') }}">{{ 'Check out your planning'|trans }}</a>
+        {% else %}
+        <h1 class="text-uppercase">{{ 'build your day '|trans }}</h1>
+        <h3>{{ 'Become  more focused, organized, and calm with To do list Builder app.'|trans }}</h3>
+        <a class="text-white text-decoration-none btn btn-lg kaki-light rounded-0 shadow mt-2 text-uppercase" href="{{  path('app_register') }}">{{ 'Register for free'|trans }}</a>
+        {% endif %}
+    </div>
+</div>
+<section class="section-numbers kaki-light-gradient">
+ <div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+        <h1> {{ ' We are helping more than '|trans }}{{ users }} {{ 'people to organise their lives better.'|trans }}</h1>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+Home: Accueil
+Register: Inscription
+Connect: Connexion
+'Tasks List': 'Liste des tâches'
+Name: Nom
+Description: Description
+Priority: Priorité
+Category: Catégorie
+'Due date': 'Date limite'
+Delete: Supprimer
+'Return to homepage': "Retour à l'accueil"
+'Add a new task form': 'Formulaire pour ajouter des tâches'
+'Password Reset Email Sent': 'Réinitialiser mot de passe'
+'If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password ': " Si une adresse e-mail correspond, un e-mail vient d'être envoyé avec un lien pour réinitialiser ton mot de passe"
+'This link will expire in': 'Ce lien va expirer dans'
+"If you don`t receive an email please check your spam folder or": "Si tu n'en as pas reçu, vérifie dans tes spam ou"
+'try again': réessaie
+Tasks: Tâches
+"Today": " Aujourd'hui"
+'My account': 'Mon compte'
+'Log out': Déconnexion
+'Log in': Connexion
+'Sign in': Connexion
+'All tasks': 'Liste des tâches'
+'Add a task': 'Ajouter une tâche'
+'Add new task': 'Ajouter une nouvelle tâche'
+Form: Formulaire
+'Reset your password': 'réinitialise ton mot de passe'
+Reset: Réinitialiser
+'Enter your email address, and we will send you a link to reset your password.': 'Saisi ton adresse  e-mail et nous enverrons un lien pour réinitialiser ton mot de passe'
+Hi: Salut !
+'To reset your password, please visit the following link': 'Pour réinitialiser ton mot de passe, clique sur le lien suivant'
+Cheers: Merci
+'Hi! Please confirm your email!': 'Salut ! Vérifie ton e-mail!'
+'Please confirm your email address by clicking the following link': 'Confirme ton adresse e-mail en cliquant sur  lien suivant'
+'Confirm my Email': 'Confirmer mon adresse'
+'Your To Do List': 'Ma To-Do List'
+English: Anglais
+French: Français
+Language: Langue
+'Please enter a password': 'Entrer un mot de passe'
+'Your password should be at least characters': "Ton mot de passe doit contenir au moins caractères"
+'New password': 'Nouveau mot de passe'
+'Repeat Password': 'Répéter le mot de passe'
+'The password fields must match.': 'Les champs du mot de passe doivent correspondre.'
+'New task title': 'Nouveau titre de tâche'
+High: Haute
+Normal: Normale
+Low: Basse
+'Choose a priority level': 'Choisir un niveau de priorité'
+'Select a category': 'Choisir une catégorie'
+Welcome: Bonjour
+Password: 'Mot de passe'
+'': 
+Cheers!: Merci!
+Modify: Modifier
+Planning: Agenda
+Settings: Paramètres
+Logout: Déconnexion
+'Add a new category': 'Ajouter une nouvelle catégorie'
+'Forgot your password?': 'Tu as oublié ton mot passe?'
+'Don`t waste time,': 'Ne perds pas de temps, '
+'Check out your planning': 'Vérifie ton agenda'
+'build your day': 'organise ta journée'
+"Become  more focused, organized, and calm with To do list Builder app.": "Deviens plus concentré, organisé et calme grâce à l'application To Do List Builder App."
+'Register for free': 'Inscrisption gratuite'
+'We are helping more than': 'Nous aidons plus de'
+'people to organise their lives better.':  'personnes à mieux organiser leur vie.'
+Calendar: Calendrier
+'Task details': 'Détails des tâches'
+'Category :': 'Catégorie :'
+'Task manager': 'Gestionnaire de tâches '
+Status: Statuts
+'Not done yet?': 'Pas encore fait?'
+'Completed task?': 'Tâche accomplie?'
+'Add a new task': 'Ajouter une nouvelle tâche'
+API: API
+Account: Compte
+'Logged in as:': 'Connecté en tant que:'
+"Today`s tasks:": "Tâche d'aujourd'hui:"
+'Add more tasks': 'Ajouter plus de tâches'
+'More details :': 'Plus de détails :'
+Completed: Accomplies
+'Nothing to show for today. Organize it now!': 'Rien de prévu pour cette journée. Organise-la maintenant!'
+"Check your full planning": "Vérifie l'ensemble de ton agenda"

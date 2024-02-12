@@ -1,0 +1,26 @@
+{% extends './user_main/index.html.twig' %}
+
+{% block title %}{{ 'Form'|trans }}{% endblock %}
+
+{% block additionalHeader %}
+<li class="nav-item">
+                    <a class="nav-link text-white" href="{{  path('app_user_main') }}">{{ 'Return to homepage'|trans }}</a>
+</li>
+{% endblock %}
+
+{% block content %}
+<section id="layoutSidenav_content">
+<div class="container p-4 m-4">
+<h1 class="text-center">{{ 'Task manager'|trans}}</h1>
+{{ form_start(form, {"attr": {"class":" shadow p-2 mx-auto",
+                               "style":"width: 800px;"  }}) }}
+
+{{ form_end(form) }}
+
+
+</div>
+</section>
+{% endblock %}
+
+
+

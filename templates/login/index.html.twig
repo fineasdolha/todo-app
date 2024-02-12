@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('styles/stylesheet_forms.css') }}">                   
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <section class="container d-flex justify-content-center align-items-center" style="height:80vh;">
+    <div>
+        <div class="card">
+        <div class="card-header"><strong>Login to your account</strong></div>
+        <div class="card-body">
+        <form action="{{ path('app_login') }}" method="post">
+        <div class="row">
+        <div class="col">
+        <div class="col">
+        <label class="form-label" for="username">Email:</label>
+        <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}">
+        </div>
+        <div class="col">
+        <label class="form-label" for="password">{{ 'Password'|trans }}</label>
+        <input class="form-control" type="password" id="password" name="_password">
+        </div>
+        </div>
+        </div>
+        {# If you want to control the URL the user is redirected to on success #}
+        <input type="hidden" name="_target_path" value="/{locale}/user"> 
+        <div class="row">
+        <div class="col mx-auto p-3 d-flex flex-column align-items-center">
+        <button class="btn btn-lg mx-auto kaki-dark" type="submit"> {{ 'Log in'|trans }}</button>
+        <small><a class="fst-italic text-decoration-none text-dark" href="{{  path('app_forgot_password_request') }}">{{ 'Forgot your password?'|trans }}</a></small>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+        {# <div class="row">
+            <div class="col-6 mx-auto">
+                {# <a class="text-white text-decoration-none btn btn-primary" href="{{  path('app_main') }}">{{ 'Return to homepage'|trans }}</a> #}
+                {# <a href="{{  path('app_forgot_password_request') }}">{{ 'Forgot your password?'|trans }}</a> #}
+                {# <a class=" col-8 mx-auto btn btn-lg kaki-dark" href="{{  path('app_forgot_password_request') }}">{{ 'Reset your password'|trans }}</a> #}
+            {# </div>
+        </div> #} 
+    </div>
+    </section>
+{% endblock %}

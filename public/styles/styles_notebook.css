@@ -1,0 +1,93 @@
+#layoutSidenav_content {  
+    width: 800px;
+    margin: 0 auto; 
+} 
+h2 { 
+    color: black;  
+    text-align: center;   
+    letter-spacing: -2px;   
+} 
+.listItemClass { 
+    color: #858585; 
+    font-size: 21px; 
+    padding: 0; 
+    width: 700px; 
+    border: 2px solid #cecece;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+} 
+.listItemClass li { 
+    list-style: none;  
+    text-indent: 20px; 
+    height: auto;  
+    padding: 10px;
+    border-left: 3px dotted black;  
+}
+.listItemClass li { 
+    background-color: #f5f5f5;
+    cursor: text; 
+}
+
+.listItemClass li:hover { 
+    background-color: #f5f5f5;
+    cursor: text; 
+}
+
+.verticalLines {  
+    width: 10px; 
+    border-left: 1px solid green; 
+    border-right: 1px solid green; 
+} 
+
+.borderLi {
+    border-bottom: 2px dotted #cecece;
+    cursor: text;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;   
+    background: hsla(60, 9%, 82%, 1);
+    background: linear-gradient(90deg, hsla(60, 9%, 82%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    transition: 0.3s;
+}
+
+.kaki-light {
+    background-color: #97978D;
+}
+
+.kaki-light-gradient {
+    background: hsla(60, 9%, 82%, 1);
+    background: linear-gradient(90deg, hsla(60, 9%, 82%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+}
+
+.kaki-dark {
+    background-color: #636365;
+    color: white; 
+}
+
+.gray-light {
+    background-color: #D2D6DC
+}
+
+.btn {
+    transition-duration: 0.3s;
+  }
+  
+.btn:hover {
+    background-color: #97978D;
+    color: white;
+  }
+
+  .card {
+    min-width: 25rem;
+  }
+
+.action-link {
+    color: #636365;
+    transition: 0.3s;
+}
+
+.action-link:hover {
+    color: #97978D;
+}
+
+

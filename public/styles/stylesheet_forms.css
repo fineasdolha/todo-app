@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans', sans-serif;   
+    background: hsla(60, 9%, 82%, 1);
+    background: linear-gradient(90deg, hsla(60, 9%, 82%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+}
+
+.kaki-light {
+    background-color: #97978D;
+}
+
+.kaki-light-gradient {
+    background: hsla(60, 9%, 82%, 1);
+    background: linear-gradient(90deg, hsla(60, 9%, 82%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+}
+
+.kaki-dark {
+    background-color: #636365;
+    color: white; 
+}
+
+.gray-light {
+    background-color: #D2D6DC
+}
+
+.btn {
+    transition-duration: 0.2s;
+  }
+  
+.btn:hover {
+    background-color: #97978D;
+    color: white;
+  }
+
+  .card {
+    min-width: 25rem;
+  }
+
+.delete {
+    background-color: #AA0000;
+}
